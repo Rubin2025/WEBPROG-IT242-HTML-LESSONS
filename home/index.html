@@ -9,8 +9,8 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background-color: #ffffff;
-      color: #222;
+      background-color: #8b0000; /* Dark red background */
+      color: #ffffff;
       line-height: 1.6;
     }
 
@@ -18,58 +18,59 @@
       max-width: 900px;
       margin: auto;
       padding: 60px 20px;
-      text-align: center;
     }
 
-    img.profile {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 25px;
-    }
-
-    h1 {
-      font-size: 2.6rem;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 1.1rem;
-      font-weight: normal;
-      color: #666;
+    .card {
+      background: #ffffff;
+      color: #222;
+      padding: 40px;
+      border-radius: 8px;
       margin-bottom: 40px;
     }
 
-    section {
-      margin-bottom: 60px;
-      text-align: left;
+    img.profile {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+      border: 4px solid #8b0000;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      background: #000;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 14px;
-      margin-top: 15px;
+    h1 {
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 5px;
+      color: #8b0000;
     }
 
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: 1px solid #ddd;
-      margin-top: 20px;
+    h2 {
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: normal;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #8b0000;
+      margin-bottom: 15px;
+    }
+
+    h4 {
+      margin-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
     }
 
     footer {
       text-align: center;
       font-size: 14px;
-      color: #777;
-      padding-top: 30px;
-      border-top: 1px solid #eee;
+      color: #eee;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -77,48 +78,68 @@
 
   <div class="container">
 
-    <!-- Profile -->
-    <img src="profile.png" alt="Profile photo" class="profile" />
-    <h1>Rubin Shamanye</h1>
-    <h2>Senior Recruiter | Talent Acquisition</h2>
+    <!-- Profile Card -->
+    <div class="card">
+      <img src="profile.png" alt="Profile photo" class="profile" />
+      <h1>Rubin Shamanye</h1>
+      <h2>Senior Recruiter | Talent Acquisition</h2>
+    </div>
 
     <!-- About -->
-    <section>
+    <div class="card">
       <h3>About</h3>
       <p>
         Senior recruiter with strong communication and bilingual skills
         (English & French), experienced in customer service, sales,
-        technical support, and talent-focused solutions.
+        and technical support. Focused on clarity, efficiency,
+        and meaningful professional relationships.
       </p>
-    </section>
+    </div>
 
     <!-- Principles -->
-    <section>
+    <div class="card">
       <h3>Principles</h3>
       <ul>
         <li>Content is simple and straight to the point</li>
         <li>Design is intuitive and easy to understand</li>
       </ul>
-    </section>
+    </div>
 
-    <!-- CV Section -->
-    <section>
-      <h3>Curriculum Vitae</h3>
-      <p>You can view or download my CV below.</p>
+    <!-- Experience -->
+    <div class="card">
+      <h3>Experience</h3>
 
-      <a href="Rubin_Shamanye_CV.pdf" class="btn" download>
-        Download CV (PDF)
-      </a>
+      <h4>Orange Congo</h4>
+      <p><strong>Customer Service Representative / Accounts Payable</strong><br>
+         <em>2018 – 2019</em></p>
+      <ul>
+        <li>Handled 50+ calls daily assisting customers with subscriptions, cancellations, and product information</li>
+        <li>Processed sales accounts, product returns, and recommended alternative solutions</li>
+        <li>Supported accounts payable operations, ensuring accurate payment of company bills</li>
+        <li>Maintained financial records, tracked expenses, and prepared reports</li>
+        <li>Managed 25+ technical support calls daily providing Level 1 troubleshooting</li>
+        <li>Provided customer support in English and French</li>
+      </ul>
 
-      <iframe src="Rubin_Shamanye_CV.pdf"></iframe>
-    </section>
+      <h4>TELUS International Philippines</h4>
+      <p><strong>Customer Care / Sales Representative</strong><br>
+         <em>February 2021 – Present</em></p>
+      <ul>
+        <li>Resolved customer telephone issues through Level 1 & Level 2 troubleshooting</li>
+        <li>Explained billing and invoicing clearly to customers</li>
+        <li>Added new services and completed account transfers with proper identity verification</li>
+        <li>Promoted and activated mobile devices including iPhone and Samsung</li>
+        <li>Worked as a Connected Home Security Specialist selling complete home security systems</li>
+        <li>Provided service and sales support in English and French</li>
+      </ul>
+    </div>
 
     <!-- Contact -->
-    <section>
+    <div class="card">
       <h3>Contact</h3>
       <p>Email: shamanyerrubin@gmail.com</p>
       <p>Location: Taguig City, Philippines</p>
-    </section>
+    </div>
 
     <footer>
       © 2026 Rubin Shamanye
