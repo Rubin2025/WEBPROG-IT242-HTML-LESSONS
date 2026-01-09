@@ -1,13 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+  <meta charset="UTF-8" />
+  <title>Rubin Shamanye</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    img.profile {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: normal;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    section {
+      margin-bottom: 60px;
+      text-align: left;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-top: 15px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ddd;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      padding-top: 30px;
+      border-top: 1px solid #eee;
+    }
+  </style>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+  <div class="container">
+
+    <!-- Profile -->
+    <img src="profile.png" alt="Profile photo" class="profile" />
+    <h1>Rubin Shamanye</h1>
+    <h2>Senior Recruiter | Talent Acquisition</h2>
+
+    <!-- About -->
+    <section>
+      <h3>About</h3>
+      <p>
+        Senior recruiter with strong communication and bilingual skills
+        (English & French), experienced in customer service, sales,
+        technical support, and talent-focused solutions.
+      </p>
+    </section>
+
+    <!-- Principles -->
+    <section>
+      <h3>Principles</h3>
+      <ul>
+        <li>Content is simple and straight to the point</li>
+        <li>Design is intuitive and easy to understand</li>
+      </ul>
+    </section>
+
+    <!-- CV Section -->
+    <section>
+      <h3>Curriculum Vitae</h3>
+      <p>You can view or download my CV below.</p>
+
+      <a href="Rubin_Shamanye_CV.pdf" class="btn" download>
+        Download CV (PDF)
+      </a>
+
+      <iframe src="Rubin_Shamanye_CV.pdf"></iframe>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h3>Contact</h3>
+      <p>Email: shamanyerrubin@gmail.com</p>
+      <p>Location: Taguig City, Philippines</p>
+    </section>
+
+    <footer>
+      © 2026 Rubin Shamanye
+    </footer>
+
+  </div>
 
 </body>
 </html>
-
